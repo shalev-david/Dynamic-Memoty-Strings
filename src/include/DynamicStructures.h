@@ -5,4 +5,6 @@
 
 int* create_index_arr(int n);
 
+int* duplicate_numbers(const int* numbers, int length);
+
 #endif
