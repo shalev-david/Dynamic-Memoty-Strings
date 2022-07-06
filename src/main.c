@@ -2,9 +2,10 @@
 
 int main(){
 
-    const int* arr = create_index_arr(5);
+    int* fibo = fib(8);
 
-    int* newArr = duplicate_numbers(arr, 3);
-
+    for(int i=0; i< 7; i++){
+        printf("%d ", fibo[i]);
+    }
     return 0;
 }

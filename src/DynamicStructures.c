@@ -21,3 +21,26 @@ int* duplicate_numbers(const int* numbers, int length){
     }
     return newArr;
 }
+
+int* fib(unsigned max_num){
+    int* fibonachi = malloc(sizeof(int));
+    int currentValue = 1;
+    int previousValue = 1;
+
+    fibonachi[0] = 0;
+
+    int index = 1;
+    while(currentValue <= max_num){
+        fibonachi = (int*) realloc(fibonachi, sizeof(int) * (index+1));
+        if(index == 1){fibonachi[index] = 1;}
+        else{
+            fibonachi[index] = currentValue;
+            int temp = currentValue;
+            currentValue += previousValue;
+            previousValue = temp;
+        }
+        index++;
+    }
+
+    return fibonachi;
+}
