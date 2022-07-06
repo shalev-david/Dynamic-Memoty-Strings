@@ -3,5 +3,6 @@
 
 #include<stdio.h>
 #include "DynamicStructures.h"
+#include "ArrayList.h"
 
 #endif
